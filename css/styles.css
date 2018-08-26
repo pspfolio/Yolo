@@ -1,0 +1,325 @@
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 1040px;
+}
+
+.landingpage-header {
+  position: relative;
+  height: 1200px;
+  width: 100%;
+  background-image: url("../assets/img/gradient.png");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.landingpage-header:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  height: 600px;
+  left: 0;
+  right: 0;
+  bottom: -400px;
+  -webkit-transform: skewY(-8deg);
+  transform: skewY(-8deg);
+}
+
+.logo {
+  z-index: 5;
+  margin-top: 0;
+  padding-top: 50px;
+  margin-left: 100px;
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.main-title {
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  margin-top: 100px;
+}
+
+.main-text {
+  margin-top: 60px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.header-subscribe {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.form {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-title {
+  font-size: 25px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.button {
+  letter-spacing: 0.8px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  padding: 25px 50px;
+  margin: 0;
+  text-decoration: none;
+  background: #00cd89;
+  color: #ffffff;
+  font-family: sans-serif;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 45px;
+  line-height: 0;
+}
+
+.button:disabled {
+  background-color: #505050;
+}
+
+.input {
+  border-radius: 8px;
+  border: none;
+  height: 45px;
+  width: 300px;
+  margin-right: 40px;
+  padding-left: 20px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.section {
+  margin-bottom: 150px;
+}
+
+.section h3 {
+  text-align: center;
+  font-size: 38px;
+  color: #072844;
+}
+
+.card-wrapper {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.section .card {
+  text-align: center;
+  max-width: 350px;
+  margin-right: 50px;
+}
+
+.section .card h4 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #072844;
+}
+
+.section .card p {
+  margin-top: 50px;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.6px;
+  color: #072844;
+}
+
+.section-2 {
+  background: #fafafa;
+  background: linear-gradient(0deg, #fff 50%, #fafafa 100%);
+  height: 500px;
+}
+
+.section-2 h3 {
+  padding-top: 50px;
+}
+
+.section-2 p {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 50%;
+  color: #072844;
+  line-height: 25px;
+  letter-spacing: 0.6px;
+}
+
+.section-2 .image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.section-2 .timeline {
+  height: 450px;
+}
+
+.footer {
+  margin-top: 350px;
+  background: rgb(42, 43, 176);
+  background: linear-gradient(
+    90deg,
+    rgba(42, 43, 176, 1) 0%,
+    rgba(0, 131, 228, 1) 100%
+  );
+  margin-bottom: 0;
+}
+
+.footer h3 {
+  padding-top: 50px;
+  color: white;
+}
+
+.footer .text {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 50%;
+  color: #fff;
+  line-height: 25px;
+}
+
+.footer form {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.footer .divider {
+  margin-top: 150px;
+  background-color: rgba(255, 255, 255, 0.35);
+  height: 1px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.footer .some {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.some .some-link {
+  font-weight: light;
+  color: white;
+  margin: 0 15px;
+}
+
+.toastify {
+  z-index: 10;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    padding: 0 24px;
+  }
+
+  .logo {
+    padding-top: 25px;
+    margin-left: 24px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .main-title {
+    font-size: 30px;
+    margin-top: 55px;
+  }
+
+  .main-text {
+    margin-top: 30px;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+  }
+
+  .header-subscribe {
+    margin-top: 40px;
+  }
+
+  .subscribe-title {
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 0.8px;
+  }
+
+  .form {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+  }
+
+  .input {
+    width: calc(100% - 16px);
+    padding-left: 16px;
+  }
+
+  .input::placeholder {
+    padding-left: 16px;
+  }
+
+  .landingpage-header {
+    height: 900px;
+  }
+
+  .landingpage-header:after {
+    height: 450px;
+  }
+
+  #button-header {
+    margin-top: 18px;
+  }
+
+  .card-wrapper {
+    align-items: center;
+    padding: 0 24px;
+    margin-top: 50px;
+    flex-direction: column;
+  }
+
+  .section .card {
+    margin-right: 0;
+  }
+
+  .section {
+    margin-bottom: 50px;
+  }
+
+  .section-2 .image-container {
+    display: none;
+  }
+
+  .footer {
+    padding: 0 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #button-footer {
+    width: 100%;
+    margin-top: 18px;
+  }
+}
